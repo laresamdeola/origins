@@ -283,10 +283,10 @@ with no colors in the grasps of {orisha.yemoja.name}
 
 def oshun_gratitude():
     oshun_gratitude_reply = input(f"{orisha.oshun.name} says, \n")
-    if oshun_gratitude_reply is not "" and oshun_gratitude_reply.isalpha() is True and\
+    if oshun_gratitude_reply != "" and oshun_gratitude_reply.isalpha() is True and\
             oshun_gratitude_reply.isnumeric() is False:
         return oshun_gratitude_reply.lower()
-    elif oshun_gratitude_reply is "":
+    elif oshun_gratitude_reply == "":
         print(f"Say something to {orisha.orunmila.name}, so he would be kind to you")
         oshun_gratitude()
     elif oshun_gratitude_reply.isnumeric() is True or oshun_gratitude_reply.isalpha() is False:
