@@ -6,11 +6,11 @@ def orisha_selection():
   player_element = ""
   with open("elements.txt", 'r') as elements_object:
     player_element = elements_object.readlines()
-    #print(player_element[0])
-    #oshun.oshun_gameplay()
-  # there's a bug here
-  if str(player_element[0]) == "water":
-    print(player_element[0])
-    oshun.oshun_gameplay()
-  elif str(player_element[0]) == "earth":
-    ogun.ogun_gameplay()
+    player_element = str(player_element[0])
+    print(type(player_element))
+    print(player_element)
+    if player_element == "water":
+      #print(player_element)
+      oshun.oshun_gameplay()
+    elif player_element == "earth":
+      ogun.ogun_gameplay()
