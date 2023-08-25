@@ -9,6 +9,7 @@ def orisha_selection():
     player_element = str(player_element[0])
     print(type(player_element))
     print(player_element)
+    # need to fix this still
     if player_element == "water":
       #print(player_element)
       oshun.oshun_gameplay()
